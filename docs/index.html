@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MD Ashik — Full‑stack developer. Designing seamless frontends and building scalable backend systems. Portfolio, projects, experience and contact.">
+  <meta name="author" content="MD Ashik">
+  <title>MD Ashik — Full‑stack Developer & Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="MD Ashik — Full‑stack Developer">
+  <meta property="og:description" content="Designing seamless frontends and building scalable backend systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.svg">
+</head>
+<body>
+  <div id="preloader" aria-hidden="true">
+    <div class="spinner" role="status" aria-label="Loading"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Primary">
+      <a class="brand" href="#" aria-label="MD Ashik homepage">MD Ashik</a>
+      <button id="mobile-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark and light mode">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <h1>MD Ashik</h1>
+          <p class="tagline">Designing seamless frontends and building scalable backend systems</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn ghost" href="cv.md" download="MD-Ashik-CV.md">Download CV</a>
+          </div>
+
+          <ul class="socials" aria-label="Social links">
+            <li><a href="#" aria-label="GitHub">GitHub</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <!-- Inline SVG profile placeholder to avoid external binary files -->
+          <figure class="profile-card" aria-hidden="false">
+            <svg viewBox="0 0 200 260" class="profile-svg" role="img" aria-label="Profile image placeholder">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#4169e1" stop-opacity="0.9"/>
+                  <stop offset="1" stop-color="#274bdb" stop-opacity="0.9"/>
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="200" height="260" rx="18" fill="url(#g1)" opacity="0.12"></rect>
+              <g transform="translate(40,30)">
+                <circle cx="60" cy="60" r="50" fill="#0b0b0b" stroke="#ffffff22" stroke-width="2"></circle>
+                <rect x="0" y="130" width="120" height="60" rx="10" fill="#ffffff0d"/>
+              </g>
+            </svg>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="panel container">
+      <h2>About</h2>
+      <div class="grid">
+        <div class="card">
+          <p>I'm MD Ashik, a full‑stack developer and software engineer who crafts clean UIs, performant web apps, and reliable backend services. I focus on usability, performance, and scalable architectures.</p>
+          <ul>
+            <li>Location: City, Country</li>
+            <li>Available: Freelance & Full-time</li>
+            <li>Email: <a href="mailto:mdashik@example.com">mdashik@example.com</a></li>
+          </ul>
+        </div>
+        <div class="card stats">
+          <div class="stat">
+            <strong class="count" data-target="8">0</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat">
+            <strong class="count" data-target="90">0</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <strong class="count" data-target="200">0</strong>
+            <span>Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card card">
+          <h3>Frontend</h3>
+          <p>React, Vue, TypeScript, HTML, CSS, Tailwind</p>
+          <div class="skill-bar" data-skill="React" data-level="95" aria-hidden="true"><div class="fill"></div></div>
+        </div>
+        <div class="skill-card card">
+          <h3>Backend</h3>
+          <p>Node.js, Express, Go, Python, GraphQL, REST</p>
+          <div class="skill-bar" data-skill="Node.js" data-level="90"><div class="fill"></div></div>
+        </div>
+        <div class="skill-card card">
+          <h3>DevOps</h3>
+          <p>Docker, Kubernetes, CI/CD, AWS</p>
+          <div class="skill-bar" data-skill="DevOps" data-level="80"><div class="fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="panel container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card card" tabindex="0">
+          <div class="project-thumb"></div>
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>High performance dashboard with realtime data and polished UX.</p>
+            <div class="project-tags"><span>React</span><span>Node</span><span>GraphQL</span></div>
+          </div>
+        </article>
+
+        <article class="project-card card" tabindex="0">
+          <div class="project-thumb"></div>
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>Scalable microservices architecture with fully automated CI/CD.</p>
+            <div class="project-tags"><span>Go</span><span>Kubernetes</span></div>
+          </div>
+        </article>
+
+        <article class="project-card card" tabindex="0">
+          <div class="project-thumb"></div>
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p>Accessible marketing site with great SEO and performance.</p>
+            <div class="project-tags"><span>Next.js</span><span>Vercel</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="panel container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <time>2023 — Present</time>
+          <div class="timeline-body card">
+            <h3>Senior Software Engineer — Example Co</h3>
+            <p>Leading frontend initiatives and designing scalable backend services.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <time>2020 — 2023</time>
+          <div class="timeline-body card">
+            <h3>Full‑stack Engineer — Startup Inc</h3>
+            <p>Built product features end‑to‑end, improved reliability and performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="panel container">
+      <h2>Certificates & Achievements</h2>
+      <div class="grid">
+        <div class="card">Certified Kubernetes Application Developer — CKAD</div>
+        <div class="card">AWS Certified Developer — Associate</div>
+        <div class="card">Winner — Hackathon 2022</div>
+      </div>
+    </section>
+
+    <section id="services" class="panel container">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="card">Frontend Development</div>
+        <div class="card">Backend & API Design</div>
+        <div class="card">Architecture & DevOps</div>
+      </div>
+    </section>
+
+    <section id="gallery" class="panel container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="img card"></div>
+        <div class="img card"></div>
+        <div class="img card"></div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="panel container">
+      <h2>Testimonials</h2>
+      <div class="testimonials-slider card">
+        <blockquote>“MD delivered a flawless UI and reliable backend — highly recommended.” — Client A</blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="panel container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form card" id="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+        <div class="map card" aria-hidden="false">
+          <h3>Location</h3>
+          <div class="map-placeholder" role="img" aria-label="Map placeholder">Google Maps placeholder</div>
+          <a class="btn ghost" href="https://wa.me/0000000000" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MD Ashik — Designed with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
